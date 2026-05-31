@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Leslie Gets Care — A Dispatch</title>
+
+<!-- ============================================================
+     LINK PREVIEW (Open Graph / iMessage / Twitter)
+     Hosted at: elijahcarimbocas.github.io/leslie-dispatch/
+     Both files must live in the same repo for the image to load.
+     ============================================================ -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="How Leslie gets seen — The Dispatch">
+<meta property="og:description" content="The cheapest ways to get a doctor's eyes on that cough without insurance — ranked best value to last resort.">
+<meta property="og:image" content="https://elijahcarimbocas.github.io/leslie-dispatch/leslie-care-og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Dispatch — Care Edition cover for Leslie">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="How Leslie gets seen — The Dispatch">
+<meta name="twitter:description" content="The cheapest ways to get seen for that cough without insurance.">
+<meta name="twitter:image" content="https://elijahcarimbocas.github.io/leslie-dispatch/leslie-care-og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500;1,700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1c1a16;
+    --paper:#f4efe3;
+    --paper-2:#eee7d6;
+    --rule:#cdc3ab;
+    --red:#9c2b22;
+    --muted:#6c6453;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    background:
+      radial-gradient(circle at 18% 12%, rgba(0,0,0,.03), transparent 45%),
+      var(--paper);
+    color:var(--ink);
+    font-family:"Spectral",Georgia,serif;
+    line-height:1.55;
+    padding:28px 16px 60px;
+    -webkit-font-smoothing:antialiased;
+  }
+  .sheet{
+    max-width:760px;margin:0 auto;
+    background:var(--paper);
+    border:1px solid var(--rule);
+    box-shadow:0 1px 0 #fff inset, 0 24px 60px -30px rgba(0,0,0,.45);
+    padding:34px 38px 44px;
+    position:relative;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.03'/%3E%3C/svg%3E");
+  }
+
+  /* MASTHEAD */
+  .masthead{
+    display:flex;justify-content:space-between;align-items:flex-end;
+    border-bottom:3px double var(--ink);padding-bottom:10px;
+    text-transform:uppercase;letter-spacing:.14em;font-size:11px;color:var(--muted);
+  }
+  .masthead .name{
+    font-family:"Playfair Display",serif;font-weight:900;
+    font-size:23px;letter-spacing:.02em;color:var(--ink);text-transform:none;
+  }
+  .masthead .right{text-align:right;line-height:1.45;}
+
+  .issue{
+    display:flex;justify-content:space-between;
+    font-size:11px;text-transform:uppercase;letter-spacing:.16em;
+    color:var(--red);padding:8px 0 0;font-weight:600;
+  }
+
+  /* HERO */
+  .kicker{
+    font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+    color:var(--muted);margin:26px 0 8px;
+  }
+  h1.hero{
+    font-family:"Playfair Display",serif;font-weight:900;
+    font-size:clamp(38px,8vw,62px);line-height:.98;letter-spacing:-.01em;
+  }
+  h1.hero em{font-style:italic;color:var(--red);}
+  .deck{
+    font-size:18px;color:#33302a;margin:16px 0 6px;max-width:56ch;font-weight:400;
+  }
+  .byline{
+    font-size:12px;letter-spacing:.06em;color:var(--muted);
+    border-top:1px solid var(--rule);margin-top:18px;padding-top:10px;
+  }
+  .byline b{color:var(--ink);}
+
+  /* SECTION LABEL */
+  .label{
+    font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--red);
+    font-weight:600;margin:38px 0 4px;
+    display:flex;align-items:center;gap:10px;
+  }
+  .label::after{content:"";flex:1;height:1px;background:var(--rule);}
+
+  .lede{
+    font-family:"Playfair Display",serif;font-style:italic;
+    font-size:21px;line-height:1.35;margin:6px 0 18px;
+  }
+
+  /* RANKED OPTIONS */
+  .opt{
+    border-top:1px solid var(--rule);padding:16px 0;
+    display:grid;grid-template-columns:34px 1fr auto;gap:14px;align-items:baseline;
+  }
+  .opt:last-child{border-bottom:1px solid var(--rule);}
+  .rank{
+    font-family:"Playfair Display",serif;font-weight:700;font-size:26px;
+    color:var(--red);line-height:1;
+  }
+  .opt h3{
+    font-family:"Playfair Display",serif;font-weight:700;font-size:20px;
+    line-height:1.15;margin-bottom:3px;
+  }
+  .opt p{font-size:15px;color:#3a3730;}
+  .opt p .pin{color:var(--red);font-style:italic;}
+  .price{
+    font-family:"Playfair Display",serif;font-weight:700;font-size:18px;
+    white-space:nowrap;text-align:right;
+  }
+  .price small{display:block;font-family:"Spectral";font-weight:400;font-size:11px;
+    text-transform:uppercase;letter-spacing:.12em;color:var(--muted);}
+  .best{
+    display:inline-block;font-size:9px;letter-spacing:.16em;text-transform:uppercase;
+    background:var(--red);color:var(--paper);padding:2px 7px;border-radius:2px;
+    vertical-align:middle;margin-left:8px;font-family:"Spectral";font-weight:600;
+  }
+
+  /* CALLOUT */
+  .callout{
+    background:var(--paper-2);border:1px solid var(--rule);
+    border-left:4px solid var(--red);
+    padding:18px 20px;margin:22px 0;position:relative;
+  }
+  .callout .tag{
+    font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--red);
+    font-weight:600;margin-bottom:7px;
+  }
+  .callout p{font-size:15px;}
+  .callout p + p{margin-top:9px;}
+  .callout b{color:var(--ink);}
+
+  /* DONE / FLAGS columns */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:8px;}
+  .cols .col h4{
+    font-family:"Playfair Display",serif;font-weight:700;font-size:16px;margin-bottom:8px;
+  }
+  .cols ul{list-style:none;}
+  .cols li{font-size:14px;padding:5px 0 5px 18px;position:relative;color:#3a3730;
+    border-bottom:1px dotted var(--rule);}
+  .cols li:last-child{border-bottom:none;}
+  .cols .done li::before{content:"✓";position:absolute;left:0;color:#5a7d3a;font-weight:700;}
+  .cols .flag li::before{content:"!";position:absolute;left:2px;color:var(--red);font-weight:700;}
+
+  .footer{
+    margin-top:34px;border-top:3px double var(--ink);padding-top:12px;
+    font-size:11px;color:var(--muted);text-align:center;line-height:1.6;
+  }
+  .footer em{font-style:italic;}
+
+  @media(max-width:560px){
+    .sheet{padding:24px 20px 32px;}
+    .cols{grid-template-columns:1fr;}
+    .opt{grid-template-columns:26px 1fr;}
+    .price{grid-column:2;text-align:left;margin-top:2px;}
+    .masthead{flex-direction:column;align-items:flex-start;gap:6px;}
+    .masthead .right{text-align:left;}
+  }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+  <div class="masthead">
+    <div class="name">The Dispatch</div>
+    <div class="right">
+      Health &amp; Home Desk<br>
+      No. 002 · The Care Edition
+    </div>
+  </div>
+
+  <div class="issue">
+    <span>Special Edition · May 2026</span>
+    <span>For Leslie · From Elijah</span>
+  </div>
+
+  <div class="kicker">A Plain-English Field Guide</div>
+  <h1 class="hero">How Leslie <em>gets seen.</em></h1>
+  <p class="deck">A short map of the cheapest ways to get a doctor's eyes on that cough without insurance — ranked from best value to last resort, plus the one thing to say at the front desk.</p>
+  <div class="byline">Filed for <b>Leslie</b> · meds &amp; cough drops already handled · the rest is just <em>if she wants a prescription or a second opinion</em></div>
+
+  <div class="label">Where to go, cheapest first</div>
+  <p class="lede">She does <em>not</em> have to default to a $250 urgent-care bill. Start at the top of this list and only move down if it's not convenient.</p>
+
+  <div class="opt">
+    <div class="rank">1</div>
+    <div>
+      <h3>Community Health Center <span class="best">Best value</span></h3>
+      <p>Federally funded (FQHC). Fees slide with income — often the cheapest real visit there is. Find one at <span class="pin">findahealthcenter.hrsa.gov</span>.</p>
+    </div>
+    <div class="price">$20–40<small>uninsured, sliding</small></div>
+  </div>
+
+  <div class="opt">
+    <div class="rank">2</div>
+    <div>
+      <h3>Free / Charitable Clinic</h3>
+      <p>Income-qualified clinics that may charge little or nothing. Availability varies by city; worth a quick search for her area.</p>
+    </div>
+    <div class="price">$0–25<small>if she qualifies</small></div>
+  </div>
+
+  <div class="opt">
+    <div class="rank">3</div>
+    <div>
+      <h3>Retail Clinic</h3>
+      <p>CVS MinuteClinic, Walgreens Health Corner. Flat, posted pricing for simple stuff. Whether they'll write a <span class="pin">controlled</span> med depends on the location.</p>
+    </div>
+    <div class="price">$99–139<small>flat fee</small></div>
+  </div>
+
+  <div class="opt">
+    <div class="rank">4</div>
+    <div>
+      <h3>Telehealth</h3>
+      <p>Cheapest and fastest for most coughs — <b>but</b> most won't prescribe codeine (it's controlled and usually needs an in-person visit). Great for everything except that.</p>
+    </div>
+    <div class="price">$0–75<small>no codeine</small></div>
+  </div>
+
+  <div class="opt">
+    <div class="rank">5</div>
+    <div>
+      <h3>Urgent Care</h3>
+      <p>The familiar fallback. Fine if the cheaper options aren't nearby — just the priciest door for what's usually a simple visit.</p>
+    </div>
+    <div class="price">$150–250<small>last resort</small></div>
+  </div>
+
+  <div class="callout">
+    <div class="tag">The one thing to say at the desk</div>
+    <p>Codeine is a controlled substance, so don't walk in asking for it by name — <b>describe the cough instead.</b> Let the clinician decide. She'll likely walk out with something better suited and cheaper.</p>
+    <p>And worth remembering: for a <b>wet, productive cough</b> like hers, codeine is usually the <em>wrong</em> tool — it quiets the cough she needs to clear the gunk. Guaifenesin (already in hand) is the right one. Codeine is really for a dry cough that's wrecking sleep.</p>
+  </div>
+
+  <div class="label">The home front</div>
+  <div class="cols">
+    <div class="col">
+      <h4 class="done-h">Already handled</h4>
+      <ul class="done">
+        <li>Cough syrup bought (DXM + guaifenesin)</li>
+        <li>Cough drops on hand</li>
+        <li>Plan: lean on it at night, plain guaifenesin by day</li>
+        <li>Water, warm fluids, steam, rest</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h4>Go get her seen if…</h4>
+      <ul class="flag">
+        <li>Thick green/yellow mucus <b>with</b> fever</li>
+        <li>Shortness of breath or wheezing</li>
+        <li>Chest pain, or coughing up blood</li>
+        <li>Cough drags past ~3 weeks</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    <em>The Dispatch is a one-reader publication.</em> · Not medical advice — general info only.<br>
+    When in doubt, a real clinician beats a newsletter. · Get well soon, Leslie.
+  </div>
+
+</div>
+</body>
+</html>
