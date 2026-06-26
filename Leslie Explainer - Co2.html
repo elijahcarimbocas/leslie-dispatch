@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leslie Explainer · CO · A Letter for Leslie</title>
+<meta name="description" content="A letter from Elijah to Leslie about the range exposure on June 20, the week of recovery, and the medical care plan going forward.">
+
+<meta property="og:title" content="A Letter for Leslie">
+<meta property="og:description" content="About last Saturday, the week since, and what comes next.">
+<meta property="og:image" content="https://elijahcarimbocas.github.io/leslie-dispatch/Leslie%20Explainer%20-%20Co2%20-%20og.png">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://elijahcarimbocas.github.io/leslie-dispatch/Leslie%20Explainer%20-%20Co2.html">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="A Letter for Leslie">
+<meta name="twitter:description" content="About last Saturday, the week since, and what comes next.">
+<meta name="twitter:image" content="https://elijahcarimbocas.github.io/leslie-dispatch/Leslie%20Explainer%20-%20Co2%20-%20og.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Italianno&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --cream: #F9F2E7;
+  --paper: #F4EAD8;
+  --paper-deep: #EBDDC4;
+  --ink: #2A1F18;
+  --ink-soft: #6B5D55;
+  --ink-whisper: #9B8E83;
+  --wine: #6B2C39;
+  --wine-soft: #8B4555;
+  --rose: #C77B6A;
+  --sage: #8B9E89;
+  --gold: #B8924A;
+  --border: rgba(42, 31, 24, 0.1);
+  --border-soft: rgba(42, 31, 24, 0.06);
+  --display: 'Cormorant Garamond', Georgia, serif;
+  --body: 'Lora', Georgia, serif;
+  --script: 'Italianno', cursive;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+
+body {
+  background: var(--cream);
+  background-image:
+    radial-gradient(ellipse at top left, rgba(199, 123, 106, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at bottom right, rgba(139, 158, 137, 0.05) 0%, transparent 50%);
+  background-attachment: fixed;
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: 17px;
+  line-height: 1.75;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.envelope {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 6rem;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .envelope { padding: 3rem 1.25rem 4rem; }
+  body { font-size: 16px; line-height: 1.7; }
+}
+
+.ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: 3rem 0;
+  color: var(--rose);
+  opacity: 0.7;
+}
+
+.ornament-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--border) 30%, var(--border) 70%, transparent);
+  max-width: 120px;
+}
+
+.ornament svg { flex-shrink: 0; }
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--display);
+  font-size: 13px;
+  font-weight: 500;
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: var(--wine);
+  margin-bottom: 2.5rem;
+  opacity: 0.85;
+}
+
+.eyebrow::before, .eyebrow::after {
+  content: '';
+  height: 1px;
+  background: var(--wine);
+  opacity: 0.3;
+  flex: 1;
+  max-width: 40px;
+}
+
+h1 {
+  font-family: var(--display);
+  font-weight: 300;
+  font-size: clamp(3rem, 9vw, 5.5rem);
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin-bottom: 2.5rem;
+  text-align: center;
+  font-style: italic;
+}
+
+h1 .for {
+  display: block;
+  font-style: normal;
+  font-size: 0.35em;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--rose);
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+h1 .name {
+  display: block;
+  font-family: var(--script);
+  font-size: 1.5em;
+  color: var(--wine);
+  line-height: 0.9;
+  margin-top: 0.5rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: var(--display);
+  font-weight: 400;
+  font-style: italic;
+  font-size: clamp(1.85rem, 5vw, 2.5rem);
+  line-height: 1.2;
+  letter-spacing: -0.005em;
+  margin: 4.5rem 0 1.5rem;
+  color: var(--wine);
+  text-align: center;
+}
+
+.section-marker {
+  display: block;
+  text-align: center;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--rose);
+  letter-spacing: 0.2em;
+  text-transform: lowercase;
+  margin-top: 3rem;
+  margin-bottom: -0.5rem;
+}
+
+h3 {
+  font-family: var(--display);
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1.35rem;
+  line-height: 1.3;
+  margin: 2rem 0 0.75rem;
+  color: var(--wine);
+}
+
+p {
+  margin-bottom: 1.5rem;
+  color: var(--ink);
+}
+
+p.lead {
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: var(--ink-soft);
+  margin-bottom: 3rem;
+  text-align: center;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p.dropcap::first-letter {
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 4.5rem;
+  line-height: 0.9;
+  float: left;
+  padding: 0.3rem 0.5rem 0 0;
+  color: var(--wine);
+}
+
+strong {
+  font-weight: 500;
+  color: var(--ink);
+  font-style: italic;
+}
+
+em {
+  font-style: italic;
+  color: var(--wine-soft);
+}
+
+a {
+  color: var(--wine);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(107, 44, 57, 0.3);
+  padding-bottom: 1px;
+  transition: border-color 0.2s;
+}
+a:hover { border-color: var(--wine); }
+
+.letter-card {
+  background: var(--paper);
+  border-radius: 4px;
+  padding: 2.5rem 2rem;
+  margin: 3rem 0;
+  position: relative;
+  box-shadow: 0 1px 0 rgba(42, 31, 24, 0.04);
+  border: 1px solid var(--border-soft);
+}
+
+.letter-card::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  bottom: 12px;
+  border: 1px solid var(--border-soft);
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.letter-card-label {
+  display: block;
+  text-align: center;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--rose);
+  letter-spacing: 0.15em;
+  text-transform: lowercase;
+  margin-bottom: 1.5rem;
+}
+
+.letter-card-label::before,
+.letter-card-label::after {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 1px;
+  background: var(--rose);
+  vertical-align: middle;
+  margin: 0 12px;
+  opacity: 0.5;
+}
+
+.letter-card p {
+  font-family: var(--body);
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.letter-card p:last-child { margin-bottom: 0; }
+
+.timeline {
+  margin: 3rem 0;
+  padding: 2rem 0.5rem;
+  text-align: center;
+}
+
+.timeline-title {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--wine);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05em;
+}
+
+.timeline-chart {
+  position: relative;
+  height: 160px;
+  margin: 1.5rem 0;
+}
+
+.timeline-chart svg { width: 100%; height: 100%; }
+
+.timeline-days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 4px;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--ink-whisper);
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.timeline-days span { padding-top: 0.5rem; }
+
+.timeline-caption {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  margin-top: 1.5rem;
+}
+
+.timeline-caption .left { color: var(--rose); }
+.timeline-caption .right { color: var(--sage); }
+
+.comparison {
+  margin: 2.5rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+@media (max-width: 600px) {
+  .comparison { grid-template-columns: 1fr; gap: 0.75rem; }
+}
+
+.comparison-side {
+  background: var(--paper);
+  border-radius: 4px;
+  padding: 1.75rem 1.5rem;
+  border: 1px solid var(--border-soft);
+  position: relative;
+}
+
+.comparison-side.then {
+  background: rgba(199, 123, 106, 0.08);
+}
+
+.comparison-side.now {
+  background: rgba(139, 158, 137, 0.1);
+}
+
+.comparison-side-title {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.1rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-soft);
+  text-align: center;
+}
+
+.comparison-side.then .comparison-side-title { color: var(--rose); }
+.comparison-side.now .comparison-side-title { color: var(--sage); }
+
+.comparison-item { margin-bottom: 1rem; }
+.comparison-item:last-child { margin-bottom: 0; }
+
+.comparison-item-label {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--ink-whisper);
+  display: block;
+  margin-bottom: 0.15rem;
+  letter-spacing: 0.05em;
+}
+
+.comparison-item-value {
+  font-family: var(--body);
+  font-size: 0.95rem;
+  color: var(--ink);
+  line-height: 1.45;
+}
+
+.pullquote {
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.45;
+  color: var(--wine);
+  text-align: center;
+  margin: 3rem auto;
+  max-width: 540px;
+  padding: 2rem 1rem;
+  position: relative;
+}
+
+.pullquote::before, .pullquote::after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 1px;
+  background: var(--rose);
+  margin: 0 auto;
+  opacity: 0.5;
+}
+
+.pullquote::before { margin-bottom: 1.5rem; }
+.pullquote::after { margin-top: 1.5rem; }
+
+.plan-card {
+  background: linear-gradient(135deg, #6B2C39 0%, #5A2530 100%);
+  color: var(--cream);
+  border-radius: 6px;
+  padding: 2.5rem 2rem;
+  margin: 3rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.plan-card::before {
+  content: '';
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  bottom: 14px;
+  border: 1px solid rgba(249, 242, 231, 0.15);
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+.plan-card-floral {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.plan-card-label {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--rose);
+  letter-spacing: 0.2em;
+  text-transform: lowercase;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.plan-card-title {
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: var(--cream);
+  line-height: 1.1;
+}
+
+.plan-card-sub {
+  text-align: center;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.05rem;
+  opacity: 0.85;
+  margin-bottom: 2rem;
+  color: var(--cream);
+}
+
+.plan-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid rgba(249, 242, 231, 0.15);
+  font-family: var(--body);
+  font-size: 0.97rem;
+}
+
+.plan-line:last-of-type { border-bottom: none; }
+
+.plan-line-label {
+  color: rgba(249, 242, 231, 0.85);
+  font-style: italic;
+}
+
+.plan-line-value {
+  font-family: var(--display);
+  font-weight: 500;
+  color: var(--cream);
+}
+
+.plan-total {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(249, 242, 231, 0.3);
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.plan-total-label {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--cream);
+}
+
+.plan-total-value {
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--cream);
+}
+
+ul.gentle {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0 2rem;
+}
+
+ul.gentle li {
+  padding: 0.65rem 0 0.65rem 2rem;
+  position: relative;
+  line-height: 1.65;
+}
+
+ul.gentle li::before {
+  content: '❦';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  color: var(--rose);
+  font-size: 0.95rem;
+  opacity: 0.7;
+}
+
+.closing-letter {
+  margin-top: 5rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.closing-letter p {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.3rem;
+  line-height: 1.55;
+  color: var(--ink);
+  margin-bottom: 1.5rem;
+}
+
+.signature {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.signature .closing-words {
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+  margin-bottom: 1rem;
+  letter-spacing: 0.08em;
+}
+
+.signature .name {
+  font-family: var(--script);
+  font-size: 3.5rem;
+  line-height: 0.9;
+  color: var(--wine);
+  display: block;
+}
+
+.signature .heart {
+  display: block;
+  color: var(--rose);
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  letter-spacing: 0.5rem;
+}
+
+.colophon {
+  margin-top: 5rem;
+  padding-top: 2.5rem;
+  text-align: center;
+  font-family: var(--display);
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--ink-whisper);
+  letter-spacing: 0.1em;
+  border-top: 1px solid var(--border-soft);
+}
+
+.colophon span { display: inline-block; margin: 0 0.75rem; }
+.colophon .dot { color: var(--rose); }
+
+.first-paragraph {
+  font-family: var(--display);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.55;
+  color: var(--ink);
+  text-align: center;
+  margin: 0 auto 3rem;
+  max-width: 540px;
+}
+</style>
+</head>
+<body>
+
+<div class="envelope">
+
+  <div class="eyebrow">A letter · June twenty-sixth · two thousand twenty-six</div>
+
+  <h1>
+    <span class="for">for my</span>
+    <span class="name">Leslie</span>
+  </h1>
+
+  <div class="ornament">
+    <div class="ornament-line"></div>
+    <svg width="44" height="20" viewBox="0 0 44 20" fill="none">
+      <path d="M22 10 Q 14 4 6 6 Q 10 10 14 10 Q 10 14 6 14 Q 14 16 22 10 Q 30 4 38 6 Q 34 10 30 10 Q 34 14 38 14 Q 30 16 22 10 Z" fill="currentColor" opacity="0.6"/>
+      <circle cx="22" cy="10" r="1.5" fill="currentColor"/>
+    </svg>
+    <div class="ornament-line"></div>
+  </div>
+
+  <p class="first-paragraph">There's something I want you in the loop on. I'm okay. But it affected me more than I let on, and the path forward involves some real medical care.</p>
+
+  <div class="letter-card">
+    <span class="letter-card-label">the short version</span>
+    <p>Last Saturday at an indoor shooting range, I was exposed to carbon monoxide and lead at levels I didn't realize until later. I've had a week of headaches and brain fog that's mostly cleared, but not entirely.</p>
+    <p>I tried a wellness hyperbaric chamber on a Groupon thinking it would help. It didn't, because that particular chamber isn't strong enough for what I actually need. I'm going to a proper medical hyperbaric clinic this week to finish the recovery the right way.</p>
+    <p>Nothing scary. Just wanted you to know what's happening, and why I might be a little slower for another week or so.</p>
+  </div>
+
+  <div class="ornament">
+    <div class="ornament-line"></div>
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+      <path d="M16 4 Q 12 8 16 16 Q 20 8 16 4 Z" fill="currentColor" opacity="0.5"/>
+      <path d="M16 28 Q 12 24 16 16 Q 20 24 16 28 Z" fill="currentColor" opacity="0.5"/>
+      <path d="M4 16 Q 8 12 16 16 Q 8 20 4 16 Z" fill="currentColor" opacity="0.5"/>
+      <path d="M28 16 Q 24 12 16 16 Q 24 20 28 16 Z" fill="currentColor" opacity="0.5"/>
+      <circle cx="16" cy="16" r="2" fill="currentColor"/>
+    </svg>
+    <div class="ornament-line"></div>
+  </div>
+
+  <span class="section-marker">i.</span>
+  <h2>What happened on June twentieth</h2>
+
+  <p class="dropcap">I went to an indoor shooting range last Saturday. I shot for over an hour with my new suppressor, which is something that took about a month to get.</p>
+
+  <p>Suppressors are wonderful for hearing protection, but here's the thing I didn't fully appreciate. They hold the burning gas inside the gun longer than an unsuppressed rifle does. That gas, the byproducts of gunpowder combustion, comes back toward the shooter's face rather than going downrange. Outdoors, no problem. The breeze takes it away.</p>
+
+  <p>Indoors, that gas builds up in the air around you. Even with the <em>good ventilation</em> the range advertises, an enclosed space can't clear it the way open air does. Especially over the course of a long suppressed session.</p>
+
+  <p>I came home with a real headache and what felt like brain fog. I assumed I just needed water and sleep. By Sunday I felt much better. By Monday I was around eighty percent. But there's been a low-grade cloudiness hanging around longer than expected.</p>
+
+  <div class="ornament">
+    <div class="ornament-line"></div>
+    <svg width="44" height="20" viewBox="0 0 44 20" fill="none">
+      <path d="M22 10 Q 14 4 6 6 Q 10 10 14 10 Q 10 14 6 14 Q 14 16 22 10 Q 30 4 38 6 Q 34 10 30 10 Q 34 14 38 14 Q 30 16 22 10 Z" fill="currentColor" opacity="0.6"/>
+      <circle cx="22" cy="10" r="1.5" fill="currentColor"/>
+    </svg>
+    <div class="ornament-line"></div>
+  </div>
+
+  <span class="section-marker">ii.</span>
+  <h2>What I was actually breathing</h2>
+
+  <p>Three things, all of which build up indoors:</p>
+
+  <ul class="gentle">
+    <li><strong>Carbon monoxide</strong>, the same gas that comes from car exhaust. A natural byproduct of gunpowder burning. It binds to your red blood cells, blocking them from carrying oxygen properly. Mild exposure causes exactly what I felt: headache, lightheadedness, mental fog.</li>
+    <li><strong>Lead</strong>, since the primers that ignite the gunpowder contain lead, which vaporizes and becomes airborne particles. Lead is a neurotoxin, and it accumulates in the body over time.</li>
+    <li><strong>Other combustion byproducts</strong> like nitrogen oxides, unburned powder, various other chemicals. None of it kind to the lungs or the nervous system.</li>
+  </ul>
+
+  <p>An hour of breathing this in a contained space is genuinely harmful exposure. Not <em>you'll die</em> levels, but enough to cause real symptoms and slow the recovery. Most experienced suppressor shooters have a similar wake-up moment early in their journey. I now know to keep suppressed shooting outdoors going forward.</p>
+
+  <div class="ornament">
+    <div class="ornament-line"></div>
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+      <path d="M16 4 Q 12 8 16 16 Q 20 8 16 4 Z" fill="currentColor" opacity="0.5"/>
+      <path d="M16 28 Q 12 24 16 16 Q 20 24 16 28 Z" fill="currentColor" opacity="0.5"/>
+      <path d="M4 16 Q 8 12 16 16 Q 8 20 4 16 Z" fill="currentColor" opacity="0.5"/>
+      <path d="M28 16 Q 24 12 16 16 Q 24 20 28 16 Z" fill="currentColor" opacity="0.5"/>
+      <circle cx="16" cy="16" r="2" fill="currentColor"/>
+    </svg>
+    <div class="ornament-line"></div>
+  </div>
+
+  <span class="section-marker">iii.</span>
+  <h2>Where I am now</h2>
+
+  <div class="timeline">
+    <div class="timeline-title">the recovery so far</div>
+    <div class="timeline-chart">
+      <svg viewBox="0 0 600 160" preserveAspectRatio="none">
+        <defs>
+          <linearGradient id="curvefill" x1="0" x2="0" y1="0" y2="1">
+            <stop offset="0%" stop-color="#C77B6A" stop-opacity="0.3"/>
+            <stop offset="100%" stop-color="#C77B6A" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <path d="M 30 25 Q 70 35 115 55 Q 160 75 200 90 Q 245 105 285 115 Q 325 122 370 125 Q 412 128 455 130 Q 500 132 540 133 L 540 145 L 30 145 Z" fill="url(#curvefill)"/>
+        <path d="M 30 25 Q 70 35 115 55 Q 160 75 200 90 Q 245 105 285 115 Q 325 122 370 125 Q 412 128 455 130 Q 500 132 540 133" fill="none" stroke="#C77B6A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="30" cy="25" r="5" fill="#C77B6A"/>
+        <circle cx="115" cy="55" r="4" fill="#C77B6A"/>
+        <circle cx="200" cy="90" r="4" fill="#C77B6A"/>
+        <circle cx="285" cy="115" r="4" fill="#C77B6A"/>
+        <circle cx="370" cy="125" r="4" fill="#C77B6A"/>
+        <circle cx="455" cy="130" r="4" fill="#C77B6A"/>
+        <circle cx="540" cy="133" r="6" fill="#8B9E89" stroke="#F9F2E7" stroke-width="2.5"/>
+      </svg>
+    </div>
+    <div class="timeline-days">
+      <span>Sat</span><span>Sun</span><span>Mon</span><span>Tue</span><span>Wed</span><span>Thu</span><span>Fri</span>
+    </div>
+    <div class="timeline-caption">
+      <span class="left">worst, day one</span> &nbsp;·&nbsp; <span class="right">today, day seven</span>
+    </div>
+  </div>
+
+  <p>The line above shows roughly how I've felt each day. Saturday was the worst. Headache all day, real fog, just feeling unlike myself. Each day since has been better, but slower than I'd hoped. Today I'd put myself at maybe 80 to 90 percent. Still some heaviness in my head, some occasional mental cloudiness.</p>
+
+  <p>This pattern matches what doctors call <em>persistent post-CO cognitive symptoms</em>. In plain terms, the brain cells that got starved of oxygen during the exposure can take days or even weeks to fully bounce back, even after the carbon monoxide itself has cleared from the body. The "fog" feeling is those cells slowly getting back to normal function. Most people fully recover from mild exposure within one or two weeks. Some take a little longer. There's a treatment that can speed things along, which is where the next part comes in.</p>
+
+  <div class="ornament">
+    <div class="ornament-line"></div>
+    <svg width="44" height="20" viewBox="0 0 44 20" fill="none">
+      <path d="M22 10 Q 14 4 6 6 Q 10 10 14 10 Q 10 14 6 14 Q 14 16 22 10 Q 30 4 38 6 Q 34 10 30 10 Q 34 14 38 14 Q 30 16 22 10 Z" fill="currentColor" opacity="0.6"/>
+      <circle cx="22" cy="10" r="1.5" fill="currentColor"/>
+    </svg>
+    <div class="ornament-line"></div>
+  </div>
+
+  <span class="section-marker">iv.</span>
+  <h2>The Buddha Bella mistake</h2>
+
+  <p>You may remember I mentioned doing a hyperbaric session this morning. I bought a Groupon for $36 at Buddha Bella Healing Center, thinking it would help with the lingering fog.</p>
+
+  <p>Here's what I didn't know going in. There are two very different kinds of hyperbaric chambers, and they do very different things.</p>
+
+  <div class="comparison">
+    <div class="comparison-side then">
+      <div class="comparison-side-title">what I tried</div>
+      <div class="comparison-item">
+        <span class="comparison-item-label">Chamber</span>
+        <span class="comparison-item-value">Vitaeris 320 · soft inflatable</span>
+      </div>
+      <div class="comparison-item">
+        <span class="comparison-item-label">Pressure</span>
+        <span class="comparison-item-value">1.3 atmospheres (mild)</span>
+      </div>
+      <div class="comparison-item">
+        <span class="comparison-item-label">Oxygen</span>
+        <span class="comparison-item-value">Filtered concentrator (~95%)</span>
+      </div>
+      <div class="comparison-item">
+        <span class="comparison-item-label">Used for</span>
+        <span class="comparison-item-value">Wellness, general recovery</span>
+      </div>
+    </div>
+    <div class="comparison-side now">
+      <div class="comparison-side-title">what I need</div>
+      <div class="comparison-item">
+        <span class="comparison-item-label">Chamber</span>
+        <span class="comparison-item-value">Hard-shell, FDA-approved medical</span>
+      </div>
+      <div class="comparison-item">
+        <span class="comparison-item-label">Pressure</span>
+        <span class="comparison-item-value">2.0 to 2.4 atmospheres (therapeutic)</span>
+      </div>
+      <div class="comparison-item">
+        <span class="comparison-item-label">Oxygen</span>
+        <span class="comparison-item-value">100% medical oxygen</span>
+      </div>
+      <div class="comparison-item">
+        <span class="comparison-item-label">Used for</span>
+        <span class="comparison-item-value">Actual medical conditions, CO toxicity</span>
+      </div>
+    </div>
+  </div>
+
+  <p class="pullquote">The Vitaeris is to medical hyperbaric oxygen what a foot massage is to physical therapy. Both feel lovely. Only one treats what I have.</p>
+
+  <p>To be fair, mild hyperbaric chambers aren't useless. Athletes use them, wellness folks swear by them. They have some real effects. They're simply not strong enough to treat what carbon monoxide does to the body. Buddha Bella isn't running anything dishonest. They're a wellness clinic with wellness-grade equipment, and I bought a Groupon without knowing the difference.</p>
+
+  <p>I came out of the hour-long session feeling about the same as when I went in. Some ear pressure during compression and decompression. No noticeable improvement in the cloudiness. Lesson learned, $36 worth of education about why pressure ratings matter.</p>
+
+  <div class="ornament">
+    <div class="ornament-line"></div>
+    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+      <path d="M16 4 Q 12 8 16 16 Q 20 8 16 4 Z" fill="currentColor" opacity="0.5"/>
+      <path d="M16 28 Q 12 24 16 16 Q 20 24 16 28 Z" fill="currentColor" opacity="0.5"/>
+      <path d="M4 16 Q 8 12 16 16 Q 8 20 4 16 Z" fill="currentColor" opacity="0.5"/>
+      <path d="M28 16 Q 24 12 16 16 Q 24 20 28 16 Z" fill="currentColor" opacity="0.5"/>
+      <circle cx="16" cy="16" r="2" fill="currentColor"/>
+    </svg>
+    <div class="ornament-line"></div>
+  </div>
+
+  <span class="section-marker">v.</span>
+  <h2>What I'm doing instead</h2>
+
+  <p>I found a proper medical hyperbaric clinic, <strong>RX-O2 Hyperbaric Clinic</strong>, with locations in Glendale and Scottsdale. Their chambers go up to 2.8 atmospheres, well within therapeutic range for what I had. They have a medical director who issues prescriptions during consultation, hard-shell FDA-approved chambers, and they actually treat medical indications like CO toxicity.</p>
+
+  <p>The treatment works by saturating my blood plasma with oxygen at high pressure. That oxygen reaches damaged tissue that regular breathing can't quite get to, accelerates clearing the remaining inflammation, and supports the recovery my body is already doing. For someone in my situation, three to five sessions is the typical protocol.</p>
+
+  <div class="plan-card">
+    <svg class="plan-card-floral" width="120" height="120" viewBox="0 0 120 120" fill="#F9F2E7">
+      <path d="M60 20 Q 50 35 60 55 Q 70 35 60 20 Z" opacity="0.7"/>
+      <path d="M80 30 Q 65 40 60 55 Q 75 50 80 30 Z" opacity="0.6"/>
+      <path d="M95 50 Q 75 55 60 55 Q 80 65 95 50 Z" opacity="0.5"/>
+      <path d="M100 75 Q 80 70 60 55 Q 75 80 100 75 Z" opacity="0.4"/>
+      <circle cx="60" cy="55" r="3"/>
+      <path d="M58 55 Q 56 65 60 80 Q 64 65 62 55 Z" opacity="0.5"/>
+    </svg>
+
+    <div class="plan-card-label">the plan</div>
+    <div class="plan-card-title">RX-O2 Hyperbaric Clinic</div>
+    <div class="plan-card-sub">Direct-pay · no insurance bureaucracy</div>
+
+    <div class="plan-line">
+      <span class="plan-line-label">Initial consultation</span>
+      <span class="plan-line-value">$150</span>
+    </div>
+    <div class="plan-line">
+      <span class="plan-line-label">60-minute treatment session</span>
+      <span class="plan-line-value">$180 × 3 to 5</span>
+    </div>
+    <div class="plan-line">
+      <span class="plan-line-label">Expected timeline</span>
+      <span class="plan-line-value">about one week</span>
+    </div>
+
+    <div class="plan-total">
+      <span class="plan-total-label">Expected total</span>
+      <span class="plan-total-value">$690 to $1,050</span>
+    </div>
+  </div>
+
+  <p>I'm contacting RX-O2 immediately to schedule the consultation, not waiting until next week. Once I'm in, sessions happen daily or every other day. Each one takes about ninety minutes including compression and decompression. I'll know if it's working within the first one or two sessions, since improvement usually shows up quickly at proper pressure.</p>
+
+  <div class="ornament">
+    <div class="ornament-line"></div>
+    <svg width="44" height="20" viewBox="0 0 44 20" fill="none">
+      <path d="M22 10 Q 14 4 6 6 Q 10 10 14 10 Q 10 14 6 14 Q 14 16 22 10 Q 30 4 38 6 Q 34 10 30 10 Q 34 14 38 14 Q 30 16 22 10 Z" fill="currentColor" opacity="0.6"/>
+      <circle cx="22" cy="10" r="1.5" fill="currentColor"/>
+    </svg>
+    <div class="ornament-line"></div>
+  </div>
+
+  <span class="section-marker">vi.</span>
+  <h2>What this means for us</h2>
+
+  <p>For another week or so, I might be a little slower than usual. If I seem foggy, or need more sleep than normal, or am quieter in the evenings, <em>that's what's happening.</em> It's not anything you said or did. It's not work stress. It's my brain finishing the slow housework after a bad gas day at the range.</p>
+
+  <p>I'll be shuffling some afternoons for the HBOT sessions, Glendale or Scottsdale depending on availability. I'll let you know my schedule as it firms up.</p>
+
+  <p>Two changes I'm making so this doesn't happen again:</p>
+
+  <ul class="gentle">
+    <li><strong>Outdoor ranges only</strong> for suppressed shooting from here on. The exposure profile is fundamentally different outdoors. Effectively a non-issue.</li>
+    <li><strong>Indoor sessions get protective gear</strong>, including an N95 mask, jacketed ammunition only, shorter sessions with breaks. If I ever shoot indoors again, twenty or thirty minutes maximum.</li>
+  </ul>
+
+  <p>The hobby itself isn't dangerous. I just didn't know what I didn't know, and I do now.</p>
+
+  <div class="closing-letter">
+    <div class="ornament">
+      <div class="ornament-line"></div>
+      <svg width="60" height="24" viewBox="0 0 60 24" fill="none">
+        <path d="M30 12 Q 22 6 14 8 Q 18 12 22 12 Q 18 16 14 16 Q 22 18 30 12 Q 38 6 46 8 Q 42 12 38 12 Q 42 16 46 16 Q 38 18 30 12 Z" fill="currentColor" opacity="0.6"/>
+        <circle cx="30" cy="12" r="2" fill="currentColor"/>
+        <path d="M28 12 Q 26 18 30 22 Q 34 18 32 12 Z" fill="currentColor" opacity="0.5"/>
+      </svg>
+      <div class="ornament-line"></div>
+    </div>
+
+    <p>Thank you for being patient with me this week. I know I've been quieter than usual, and I didn't want you wondering if it was something else.</p>
+
+    <p>It really is just this. My brain doing its slow housekeeping after a real exposure, and now finishing the job with the right tool.</p>
+
+    <p>I'll keep you posted as the consult and the sessions happen. If you have questions about any of this, even the technical pieces, ask me anytime. I went deep on the research this week. You're seeing the abridged version here.</p>
+  </div>
+
+  <div class="signature">
+    <p class="closing-words">Yours, always</p>
+    <span class="name">Elijah</span>
+    <span class="heart">♡ ♡ ♡</span>
+  </div>
+
+  <div class="colophon">
+    <span>Updated 06.26.2026</span>
+    <span class="dot">·</span>
+    <span>v1.1</span>
+    <span class="dot">·</span>
+    <span>For Leslie, with all my love</span>
+  </div>
+
+</div>
+
+</body>
+</html>
